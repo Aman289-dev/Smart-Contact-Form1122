@@ -1,0 +1,16 @@
+# Allow-list: ignore everything at the root, then re-include what belongs in the repository.
+/*
+!/client
+!/server
+!/tests
+!/package.json
+!/package-lock.json
+!/.env.example
+!/.gitignore
+
+node_modules/
+dist/
+.env
+server/uploads/*
+!server/uploads/.gitkeep
+tests/.results/

@@ -1,0 +1,15 @@
+/* Editorial: flat and paper-like. Near-square corners, a serif heading face and
+   no resting shadows.
+   Defines the language half of the token contract (radius, fonts, shadows);
+   the colours come from a palette, and nothing else is defined here. */
+:root {
+  --radius: 0.25rem;
+
+  --font-body: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-heading: ui-serif, Georgia, Cambria, "Times New Roman", serif;
+  --font-code: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  --elevation-low: 0 0 0 0 transparent;
+  --elevation-mid: 0 1px 0 0 oklch(0 0 0 / 0.06);
+  --elevation-high: 0 12px 32px -16px oklch(0 0 0 / 0.25);
+}

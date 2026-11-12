@@ -1,0 +1,13 @@
+{
+  "name": "tests",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "mkdir -p .results && tsx --test --test-reporter=spec --test-reporter-destination=stdout --test-reporter=junit --test-reporter-destination=.results/junit.xml \"api/**/*.test.ts\""
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.4",
+    "tsx": "^4.23.15"
+  }
+}
